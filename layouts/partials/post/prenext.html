@@ -1,16 +1,16 @@
 <div class="post-nav">
     <div class="post-nav-next post-nav-item">
-    {{if .Next}}
-        <a href="{{ .Next.Permalink}}" rel="next" title="{{.Next.Title}}">
-        <i class="fa fa-chevron-left"></i> {{.Next.Title}}
+    {{if .NextPage}}
+        <a href="{{ .NextPage.Permalink}}" rel="next" title="{{.NextPage.Title}}">
+        <i class="fa fa-chevron-left"></i> {{.NextPage.Title}}
         </a>
     {{end}}
     </div>
 
     <div class="post-nav-prev post-nav-item">
-    {{if .Prev}}
-        <a href="{{ .Prev.Permalink}}" rel="prev" title="{{.Prev.Title}}">
-        {{.Prev.Title}} <i class="fa fa-chevron-right"></i>
+    {{if .PrevPage}}
+        <a href="{{ .PrevPage.Permalink}}" rel="prev" title="{{.PrevPage.Title}}">
+        {{.PrevPage.Title}} <i class="fa fa-chevron-right"></i>
         </a>
     {{end}}
     </div>
