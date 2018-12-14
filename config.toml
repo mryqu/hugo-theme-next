@@ -1,6 +1,6 @@
-Title =  "蘭陵N散記"
+Title =  "Mryqu's Notes"
 LanguageCode = "zh-CN"
-BaseUrl = "http://lanlingzi.cn/"
+BaseUrl = "https://mryqu.github.io/"
 Theme =  "next"
 MetaDataFormat =  "yaml"
 CanonifyUrls =  true
@@ -15,70 +15,89 @@ PygmentsStyle = "monokai"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 DefaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = false
 
 [Params]
   Introduce = "Programmer & Architect"
-  Description = "蘭陵N散記 | 博客 | 软件 | 架构 | Java | Golang"
-  Keywords =  "蘭陵N散記,兰陵,独立,博客,程序员,架构师,个人,思考,读书,笔记,技术,分享,Golang"
-  Subtitle = "一指流沙，程序年华"
+  Description = "mryqu | yandongqu | 博客 | 软件 | 架构 | 技术"
+  Keywords =  "mryqu,yandongqu,博客,程序员,架构师,笔记,技术,分享"
+  Subtitle = ""
   Imglogo = "/img/logo.png"
   AuthorImg = "/img/author.jpg"
   DateFormat = "2006-01-02"
   YearFormat = "2006年"
-  MonthFormat = "01-02"
-  #BaiduStatsId = "0b07433b4ab8d587dae7d34e71973839"
-  #QQStatsId = "58416275"
+  MonthFormat = "01-02"  
+  #BaiduStatsId = ""
+  #QQStatsId = ""
+  toc = true
   Fancybox = true
 
 [Author]
-  Name = "兰陵子"
+  Name = "mryqu"
 
 [Params.Share]
-  #DuoShuo = "lanlingzi"
-  Baidu = true
+  #DuoShuo = ""
+  #Baidu = true
 
-[[Menu.Main]]
+[[menu.main]]
   Name = "首页"
   Pre = "home"
   URL = "/"
   Weight = 1
-[[Menu.Main]]
-  Name = "技术"
-  Pre = "code"
-  URL = "/categories/技术/"
+[[menu.main]]
+  Name = "标签"
+  Pre = "tags"
+  URL = "/tags/"
   Weight = 2
-[[Menu.Main]]
-  Name = "感想"
-  Pre = "tint"
-  URL = "/categories/感想/"
+[[menu.main]]
+  Name = "分类"
+  Pre = "categories"
+  URL = "/categories/"
   Weight = 3
-[[Menu.Main]]
-  Name = "笔记"
-  Pre = "book"
-  URL = "/categories/笔记/"
-  Weight = 4
-[[Menu.Main]]
-  Name = "杂记"
-  Pre = "leaf"
-  URL = "/categories/杂记/"
-  Weight = 5
-[[Menu.Main]]
+[[menu.main]]
   Name = "归档"
   Pre = "archive"
   URL = "/post/"
-  Weight = 6
-[[Menu.Main]]
-  Name = "关于"
-  Pre = "user"
-  URL = "/about/"
-  Weight = 7
+  Weight = 4
+
+[[languages.en.menu.main]]
+  Name = "Home"
+  Pre = "home"
+  URL = "/"
+  Weight = 1
+[[languages.en.menu.main]]
+  Name = "Tag"
+  Pre = "tags"
+  URL = "/tags/"
+  Weight = 2
+[[languages.en.menu.main]]
+  Name = "Category"
+  Pre = "categories"
+  URL = "/categories/"
+  Weight = 3
+[[languages.en.menu.main]]
+  Name = "Archive"
+  Pre = "archive"
+  URL = "/post/"
+  Weight = 4
 
 [[Params.Socials]]
   Name = "GitHub"
   Icon = "github"
-  URL = "https://github.com/xtfly/"
+  URL = "https://github.com/mryqu"
 
 [[Params.Socials]]
-  Name = "知乎"
-  Icon = "globe"
-  URL = "https://www.zhihu.com/people/lan-ling-xin-yun"  
+  Name = "Twitter"
+  Icon = "twitter"
+  URL = "https://twitter.com/yandongqu"  
+
+[[Params.Socials]]
+  Name = "FB Page"
+  Icon = "facebook"
+  URL = "https://www.facebook.com/yandongqu"  
+
+[languages.en]
+  languageCode = "en-US"
+
+[languages.zh]
+  languageCode = "zh-CN"

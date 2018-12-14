@@ -6,18 +6,14 @@
   </div>
 </div>
 <aside id="sidebar" class="sidebar">
-  <div class="sidebar-inner">
-{{ if isset .Params "toc" }}
+  <div class="sidebar-inner"> 
+{{ if eq .File.Dir "post\\" }}
   <ul class="sidebar-nav motion-element">
-    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-      {{ i18n "ToC" }}
-    </li>
-    <li class="sidebar-nav-overview" data-target="site-overview">
-      {{ i18n "SiteInfo" }}
-    </li>
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">{{i18n "ToC"}}</li>
+    <li class="sidebar-nav-overview" data-target="site-overview">{{i18n "SiteInfo"}}</li>
   </ul>
 {{ end }}
-    <section class="site-overview sidebar-panel {{ if not (isset .Params "toc") }} sidebar-panel-active {{ end }}">
+    <section class="site-overview sidebar-panel {{ if not (eq .File.Dir "post\\") }} sidebar-panel-active {{ end }}">
       {{ partial "sidebar/author.html" . }}
       {{ partial "sidebar/state.html" . }}
       {{ partial "sidebar/rss.html" . }}
