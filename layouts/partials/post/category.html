@@ -1,5 +1,6 @@
 {{ if isset .Params "categories" }}
-{{ if not (eq (len .Params.categories) 0) }}
+{{ if not .Params.categories}}
+{{ else }}
   <span class="post-category" >
   &nbsp; | &nbsp;
   <span class="post-meta-item-icon">
