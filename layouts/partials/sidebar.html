@@ -7,15 +7,13 @@
 </div>
 <aside id="sidebar" class="sidebar">
   <div class="sidebar-inner"> 
-{{ printf "yqu1:%#v" .File }}  
-{{ printf "yqu2:%#v" .File.Dir }}  
-{{ if eq .File.Dir "post\\" }}
+{{ if or (eq .File.Dir "post\\") (eq .File.Dir "post/") }}
   <ul class="sidebar-nav motion-element">
     <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">{{i18n "ToC"}}</li>
     <li class="sidebar-nav-overview" data-target="site-overview">{{i18n "SiteInfo"}}</li>
   </ul>
 {{ end }}
-    <section class="site-overview sidebar-panel {{ if not (eq .File.Dir "post\\") }} sidebar-panel-active {{ end }}">
+    <section class="site-overview sidebar-panel {{ if not (or (eq .File.Dir "post\\") (eq .File.Dir "post/")) }} sidebar-panel-active {{ end }}">
       {{ partial "sidebar/author.html" . }}
       {{ partial "sidebar/state.html" . }}
       {{ partial "sidebar/rss.html" . }}
